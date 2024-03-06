@@ -1,0 +1,12 @@
+input[type="text"]:focus {
+    border: none;
+    outline: none;
+  }
+  
+  button{
+    transition:  box-shadow 0.5s;
+  }
+  button:hover:not(.srch) {
+    background: orange;
+    color: white;
+  }

@@ -1,0 +1,52 @@
+#others div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+#searchbox{
+    border: 2px solid black;
+}
+
+
+.scrollmenu{
+  position: fixed;
+}
+
+#others>div:hover,#category>li:hover,#menu span:hover{
+  color: orange;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #sidemenu.hide{
+    right:0px;
+  }
+    #sidemenu{
+      position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 1;
+    background: white;
+    height: 100%;
+    padding: 30px;
+    width: 300px;
+    justify-content: flex-start;
+    transition: right 0.8s ease;
+    }
+    
+
+    #category{
+      flex-basis: auto;
+    }
+    #searchbox{
+      flex-basis: auto;
+    }
+
+    #others div{
+      flex-direction: row;
+      justify-content: start;
+      gap: 20px
+    }
+}
+
