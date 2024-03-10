@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body::before{
+    content: '';
+    background: url('/background.jpg')no-repeat center/cover;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    filter: brightness(0.8);
+  }
+
+  input[type='text']::placeholder{
+    color: white;
+    
+  }
+
+  input[type=text]:focus{
+   
+    outline: none
+  }
+
+  .strike{
+    text-decoration: line-through;
+  }
